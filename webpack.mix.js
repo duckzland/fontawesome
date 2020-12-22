@@ -15,10 +15,10 @@ let mix = require('laravel-mix');
 
 mix.js('resources/js/field.js', 'dist/js');
 
-/**
+
 mix.webpackConfig({
     output: {
-        filename:'[name].js',
+        filename:'field.js',
         chunkFilename: '[name].[contenthash].js',
     },
     optimization: {
@@ -44,9 +44,8 @@ mix.webpackConfig({
         }
       },
 });
-**/
-/**
+
+
 mix.babelConfig({
     plugins: ['@babel/plugin-syntax-dynamic-import'],
-  });
-**/
+});
