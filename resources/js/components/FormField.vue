@@ -112,14 +112,12 @@ export default {
   beforeMount() {
     let arr = {};
     const { library } = require("@fortawesome/fontawesome-svg-core");
-    const fab = require("@fortawesome/free-brands-svg-icons").fab;
-    const far = require("@fortawesome/free-regular-svg-icons").far;
+    const far = require("@fortawesome/pro-regular-svg-icons").far;
     require("@fortawesome/fontawesome-free/js/fontawesome.js");
 
     arr.far = far;
-    arr.fab = fab;
 
-    library.add(far, fab);
+    library.add(far);
 
     for (let key in arr) {
       this.definitions.push(this.definitionToString(key));

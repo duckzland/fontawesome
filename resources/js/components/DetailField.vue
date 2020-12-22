@@ -12,11 +12,11 @@ export default {
 
   beforeMount() {
     const { library } = require("@fortawesome/fontawesome-svg-core");
-    const fab = require("@fortawesome/free-brands-svg-icons").fab;
-    const far = require("@fortawesome/free-regular-svg-icons").far;
+    //const fab = require("@fortawesome/free-brands-svg-icons").fab;
+    const far = require("@fortawesome/pro-regular-svg-icons").far;
     require("@fortawesome/fontawesome-free/js/fontawesome.js");
 
-    library.add(far, fab);
+    library.add(far);
   },
 
   computed: {
